@@ -1,0 +1,28 @@
+1. Add Web Scraper extention in chrome
+   https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn
+
+2. Open in chrome the forum webpage: https://forum.allianz.de/hilfe/kfz-versicherung
+
+3. Press F12 to open Developer tools
+
+4. Click on the Web Scraper menu
+
+5. Click on the "Create new Sitemap" option
+
+6. Click on the "import Sitemap" option
+
+7. Copy and paste the content below into the Sitemap JSON area
+
+{"_id":"forum-allianz","startUrl":["https://forum.allianz.de/hilfe/kfz-versicherung?page=1"],"selectors":[{"id":"comments","type":"SelectorLink","selector":"a.stream__item__title","parentSelectors":["comments"],"multiple":true,"delay":0},{"id":"case-name-list","type":"SelectorLink","selector":"a.stream__item__title","parentSelectors":["_root","pagination"],"multiple":true,"delay":0},{"id":"pagination","type":"SelectorLink","selector":"a.pagination__page","parentSelectors":["_root","pagination"],"multiple":true,"delay":0},{"id":"body","type":"SelectorText","selector":"a.topic__item__profile, span.topic__author___timestep, h1.topic__headline, div.topic__body, a.stream__item__profile, ul.stream__item__meta div, div.stream__item__content span, span.user__role__badge","parentSelectors":["case-name-list"],"multiple":true,"regex":"/bonus(\\\\s)*drive|BonusDrive|Bonus-Drive|Stecker|Bluetooth|Aufzeichnung|Aufzeichnen|Drive-App|Drive(\\\\s)*App|app(?=\\s|\\-)|gold|silver|bronze|medaille|smartphone|smart(\\\\s)*phone|smart-phone|punkt|handy|telematik|Bonus|fahrstil|fahrdaten|bremse|gps|sensoren|verhalten|geschwindigkeit|beschleunigung|verhält|beschleunigen|abbremsen|scoremodell|score-wert|score(\\\\s)*wert|mein(\\\\s)*auto|datenübertragung|android|betriebssystem|manövern|fahrdaten|wertung|policen|zigarettenanzünder|anonymisiert|privat|sicher/ig","delay":0}]}
+
+8. (Optional) If you want, you can rename the sitemap writing a new name in the "Reanme Sitemap" field
+
+9. Click on the "Import Sitemap" button to import the BonusDrive forum's scraper
+
+10. Click on the Sitemap forum-allianz (or the name that you chose in 8)
+
+11. Click on the scrape option and choose the "Request interval" and "Page load delay". We recommend to put these values on 2000
+
+12. Click on Start scraping to start the scraper process. Wait for a couple of minutes until the scraper process finishes
+
+13. After finishing the scraper process, you can export the extracted data (*.cvs) from "Sitemap forum-allianz" -> "Export data as CSV" 
