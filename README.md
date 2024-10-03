@@ -1,10 +1,10 @@
-# ubi-interviews-forum-analysis
-Research material of semi-structured interviews with UBI users and UBI forum analysis
+# Overview
 
-1). ubi-interview-guide.pdf		-> Questionnarie for semi-structured interview 	
+Research material of semi-structured interviews with UBI users and UBI forum analysis from the user study "Acceptance Factors of Car Insurance Innovations: The Case of Usage-Based Insurance" [1]:
 
-2). ubi-definition.mp4			-> Brief description of Usage-Based Insurance
+- `ubi-interview-guide.pdf` - questionnarie for semi-structured interview.	
+- `ubi-definition.mp4` - brief description of Usage-Based Insurance.
+- `ubi-questionnaire-recruitment.pdf` - questionnaire for recruiting ubi users.
+- `scrape-process.dat` - scraper process to extract data from insurance forum.
 
-3). ubi-questionnaire-recruitment.pdf	-> Questionnaire for recruiting ubi users
-
-4). scrape-process.dat			-> Scraper process to extract data from insurance forum
+[1] Juan Quintero, Alexandr Railean, and Zinaida Benenson. Acceptance Factors of Car Insurance Innovations: The Case of Usage-Based Insurance. Journal of Traffic and Logistics Engineering, 8(2):45–55, 2020. doi: 10.18178/jtle.8.2.45-55. URL https://doi.org/10.18178/jtle.8.2.45-55.
